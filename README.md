@@ -38,3 +38,13 @@ Always
 # Why Kevin
 
 If tool + LLM = job then why stop at software engineer
+
+# Commands
+
+```bash
+npm install
+npm run dev
+npm run dev -- --open
+npm run build
+npm run preview
+```
