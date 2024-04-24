@@ -7,6 +7,11 @@
     --color-light: #8f8f8f;
     --color-theme: #3863be;
     --color-preview: #2e2e2e;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
