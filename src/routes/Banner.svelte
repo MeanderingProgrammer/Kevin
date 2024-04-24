@@ -5,15 +5,15 @@
 <style>
     .wrapper {
         background-color: #256ad1;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
     p {
         margin: 0;
         text-align: center;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     a {

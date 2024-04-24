@@ -9,7 +9,7 @@
 <style>
     p {
         color: var(--color-text);
-        font-size: 20px;
-        line-height: 200%;
+        font-size: 1.25rem;
+        line-height: 2em;
     }
 </style>

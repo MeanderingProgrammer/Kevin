@@ -22,24 +22,17 @@ body {
 
 h1 {
     color: var(--color-text);
-    font-size: 32px;
 }
 
 h2 {
     color: var(--color-sub);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
 }
 
 p {
     color: var(--color-light);
-    font-size: 16px;
-    line-height: 150%;
-}
-
-em {
-    color: var(--color-sub);
-    font-size: 20px;
+    line-height: 1.5em;
 }
 
 a {
@@ -48,12 +41,15 @@ a {
 
 button {
     font-family: inherit;
+    font-size: inherit;
 }
 
 input {
     font-family: inherit;
+    font-size: inherit;
 }
 
 textarea {
     font-family: inherit;
+    font-size: inherit;
 }

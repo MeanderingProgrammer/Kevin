@@ -5,7 +5,8 @@
 
     function handleText(event: KeyboardEvent): void {
         if (event.key === 'Enter') {
-            if (event.target.value.length > 0) {
+            const element = event.target;
+            if (element instanceof HTMLTextAreaElement && element.value.length > 0) {
                 popup.show();
             } else {
                 event.preventDefault();
@@ -23,9 +24,7 @@
         </div>
         <div class="empty"></div>
         <div class="section-footer">
-            <button on:click={popup.show}>
-                <p>Request access</p>
-            </button>
+            <button on:click={popup.show}><p>Request access</p></button>
         </div>
     </div>
 
@@ -54,7 +53,7 @@
     .side-bar {
         width: 270px;
         background-color: var(--color-preview);
-        padding: 16px;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -62,7 +61,7 @@
     .prompt-panel {
         flex-grow: 1;
         background-color: var(--color-preview);
-        margin: 16px;
+        margin: 1rem;
         border-radius: var(--radius);
         display: flex;
         flex-direction: column;
@@ -78,8 +77,8 @@
 
     .section-footer {
         border-top: 1px solid var(--color-text);
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
     }
 
     button {
@@ -91,13 +90,12 @@
     textarea {
         resize: none;
         width: 100%;
-        height: 50px;
+        height: 3rem;
         background-color: var(--color-text);
         border-radius: var(--radius);
         border: none;
         color: #ffffff;
-        font-size: 16px;
-        padding: 14px;
+        padding: 0.875rem;
     }
 
     textarea::placeholder {
@@ -105,12 +103,12 @@
     }
 
     .inner {
-        padding: 30px;
+        padding: 2rem;
     }
 
     h1 {
         color: #ffffff;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     p {
@@ -119,11 +117,11 @@
     }
 
     .larger {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .smaller {
         color: #9ca3af;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 </style>

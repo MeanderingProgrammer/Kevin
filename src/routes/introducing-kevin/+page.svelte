@@ -9,7 +9,7 @@
 
 <h1>Introducing Kevin, the first AI project manager</h1>
 
-<em>And setting a new state of the art on the PMS-bench management benchmark</em>
+<h2><i>And setting a new state of the art on the PMS-bench management benchmark</i></h2>
 
 <p>Meet Kevin, the world’s first fully autonomous AI project manager.</p>
 

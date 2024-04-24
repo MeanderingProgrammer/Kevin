@@ -42,7 +42,7 @@
 
     li a {
         color: var(--color-text);
-        font-size: 20px;
+        font-size: 1.25rem;
         padding: 0 1rem;
         text-decoration: none;
     }

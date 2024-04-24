@@ -37,7 +37,7 @@
         background-color: var(--color-preview-dark);
         border-radius: var(--radius);
         border: none;
-        padding: 24px;
+        padding: 1.5rem;
     }
 
     dialog::backdrop {
@@ -53,7 +53,7 @@
         line-height: 2rem;
         color: #ffffff;
         padding-left: 0.5rem;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 
     button {
@@ -62,7 +62,7 @@
         border: none;
         border-radius: 9999px;
         width: 160px;
-        margin-top: 10px;
+        margin-top: 0.5rem;
     }
 
     button p {
@@ -71,17 +71,17 @@
 
     h1 {
         color: #ffffff;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     p {
         color: #ffffff;
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-bottom: 0px;
     }
 
     .larger {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .padded {
