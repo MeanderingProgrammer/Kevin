@@ -11,22 +11,20 @@
 
 <dialog bind:this={dialog}>
     <h1>Request access to Kevin</h1>
-    <p class="larger">
+    <p class="larger padded">
         To start using Kevin at your company, please request access. If you already have access, login
         <a href="TODO">here</a>.
     </p>
+
     <p>Email</p>
-    <div>
-        <input type="text" />
-    </div>
+    <div><input type="text" /></div>
+
     <p>What would you like to use Kevin for?</p>
-    <div>
-        <input type="text" />
-    </div>
+    <div><input type="text" /></div>
+
     <p>Please share a bit more about yourself (LinkedIn, X, etc.)</p>
-    <div>
-        <input type="text" />
-    </div>
+    <div><input type="text" /></div>
+
     <button on:click={close}>
         <p class="larger">Request Access</p>
     </button>
@@ -35,7 +33,7 @@
 
 <style>
     dialog {
-        width: 400px;
+        width: 380px;
         background-color: var(--color-preview-dark);
         border-radius: var(--radius);
         border: none;
@@ -47,16 +45,28 @@
         opacity: 0.8;
     }
 
+    input {
+        width: 100%;
+        background-color: #121212;
+        border-radius: var(--radius);
+        border: none;
+        line-height: 2rem;
+        color: #ffffff;
+        padding-left: 0.5rem;
+        margin-bottom: 15px;
+    }
+
     button {
         cursor: pointer;
         background-color: #60a5fa;
         border: none;
         border-radius: 9999px;
         width: 160px;
+        margin-top: 10px;
     }
 
     button p {
-        margin: 0;
+        margin: 5px;
     }
 
     h1 {
@@ -67,10 +77,16 @@
     p {
         color: #ffffff;
         font-size: 12px;
+        margin-bottom: 0px;
     }
 
     .larger {
         font-size: 14px;
+    }
+
+    .padded {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     a {
