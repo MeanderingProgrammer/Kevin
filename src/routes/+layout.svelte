@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import './styles.css';
     import Banner from './Banner.svelte';
     import Header from './Header.svelte';

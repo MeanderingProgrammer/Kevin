@@ -1,5 +1,6 @@
 <script lang="ts">
     import Popup from './Popup.svelte';
+    import Icon from '@iconify/svelte';
 
     let popup: Popup;
 
@@ -24,7 +25,10 @@
         </div>
         <div class="empty"></div>
         <div class="section-footer">
-            <button on:click={popup.show}><p>Request access</p></button>
+            <button class="request" on:click={popup.show}>
+                <Icon icon="radix-icons:enter" width="1.5rem" height="1.5rem" style="color: #6096ff;" />
+                <p>Request access</p>
+            </button>
         </div>
     </div>
 
@@ -38,7 +42,12 @@
         </div>
         <div class="empty"></div>
         <div class="inner">
-            <textarea on:keydown={handleText} placeholder="Give Kevin a task to work on..."></textarea>
+            <div class="relative">
+                <textarea on:keydown={handleText} placeholder="Give Kevin a task to work on..."></textarea>
+                <button class="submit" on:click={popup.show}>
+                    <Icon icon="radix-icons:arrow-right" width="1.5rem" height="1.5rem" style="color: #ffffff" />
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -87,6 +96,10 @@
         border: none;
     }
 
+    button:focus {
+        outline: none;
+    }
+
     textarea {
         resize: none;
         width: 100%;
@@ -95,15 +108,32 @@
         border-radius: var(--radius);
         border: none;
         color: #ffffff;
-        padding: 0.875rem;
+        padding-top: 0.875rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
     }
 
     textarea::placeholder {
         color: #9ca3af;
     }
 
+    .request {
+        display: flex;
+        gap: 1rem;
+    }
+
     .inner {
         padding: 2rem;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .submit {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
     }
 
     h1 {

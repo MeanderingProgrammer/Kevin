@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import intro from '$lib/assets/intro-post.png';
 </script>
 
