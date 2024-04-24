@@ -48,7 +48,7 @@
     .wrapper {
         display: flex;
         height: 100vh;
-        background-color: #242424;
+        background-color: var(--color-preview-dark);
     }
 
     .side-bar {
@@ -95,7 +95,6 @@
         background-color: var(--color-text);
         border-radius: var(--radius);
         border: none;
-        font-family: inherit;
         color: #ffffff;
         font-size: 16px;
         padding: 14px;

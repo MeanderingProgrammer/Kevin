@@ -7,6 +7,7 @@
     --color-light: #8f8f8f;
     --color-theme: #3863be;
     --color-preview: #2e2e2e;
+    --color-preview-dark: #242424;
     --radius: 8px;
 }
 
@@ -43,4 +44,16 @@ em {
 
 a {
     color: var(--color-theme);
+}
+
+button {
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+textarea {
+    font-family: inherit;
 }
