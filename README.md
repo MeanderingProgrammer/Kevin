@@ -39,14 +39,10 @@ Always
 
 If tool + LLM = job then why stop at software engineer
 
-# Commands
+# Command
 
 ```bash
-npm install
-npm run dev
-npm run dev -- --open
-npm run build
-npm run preview
+npm install && npm run app:dev
 ```
 
 # Devin Websites

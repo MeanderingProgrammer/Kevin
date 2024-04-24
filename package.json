@@ -10,7 +10,8 @@
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --check . && eslint .",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "app:dev": "npm run check && npm run format && npm run lint && npm run dev -- --open"
     },
     "devDependencies": {
         "@fontsource/dm-sans": "5.0.21",
