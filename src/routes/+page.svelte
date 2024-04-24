@@ -8,7 +8,7 @@
 
 <style>
     p {
-        color: #484848;
+        color: var(--color-text);
         font-size: 20px;
     }
 </style>

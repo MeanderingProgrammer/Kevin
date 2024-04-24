@@ -1,11 +1,8 @@
 @import '@fontsource/dm-sans';
 
 :root {
+    --color-text: #484848;
     --color-theme-1: #3863be;
-}
-
-body {
-    font-family: 'DM Sans';
 }
 
 a {
