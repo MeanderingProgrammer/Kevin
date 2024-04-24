@@ -19,7 +19,6 @@
         width: 100%;
         max-width: 940px;
         margin: 0 auto;
-        font-family: 'DM Sans';
     }
 
     main {
