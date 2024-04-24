@@ -1,3 +1,21 @@
+<script lang="ts">
+    import Popup from './Popup.svelte';
+
+    let popup: Popup;
+
+    function handleText(event: KeyboardEvent): void {
+        if (event.key === 'Enter') {
+            if (event.target.value.length > 0) {
+                popup.show();
+            } else {
+                event.preventDefault();
+            }
+        }
+    }
+</script>
+
+<Popup bind:this={popup} />
+
 <div class="wrapper">
     <div class="side-bar">
         <div class="section-header">
@@ -5,7 +23,9 @@
         </div>
         <div class="empty"></div>
         <div class="section-footer">
-            <p>Request access</p>
+            <button on:click={popup.show}>
+                <p>Request access</p>
+            </button>
         </div>
     </div>
 
@@ -19,7 +39,7 @@
         </div>
         <div class="empty"></div>
         <div class="inner">
-            <textarea placeholder="Give Kevin a task to work on..."></textarea>
+            <textarea on:keydown={handleText} placeholder="Give Kevin a task to work on..."></textarea>
         </div>
     </div>
 </div>
@@ -62,6 +82,12 @@
         padding-bottom: 20px;
     }
 
+    button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
     textarea {
         resize: none;
         width: 100%;
@@ -79,6 +105,10 @@
         color: #9ca3af;
     }
 
+    .inner {
+        padding: 30px;
+    }
+
     h1 {
         color: #ffffff;
         font-size: 20px;
@@ -87,10 +117,6 @@
     p {
         margin: 0;
         color: #ffffff;
-    }
-
-    .inner {
-        padding: 30px;
     }
 
     .larger {

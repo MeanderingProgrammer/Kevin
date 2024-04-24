@@ -2,6 +2,7 @@
     "name": "Kevin",
     "version": "0.0.1",
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "vite dev",
         "build": "vite build",
@@ -29,6 +30,5 @@
         "tslib": "2.6.2",
         "typescript": "5.4.5",
         "vite": "5.2.10"
-    },
-    "type": "module"
+    }
 }
