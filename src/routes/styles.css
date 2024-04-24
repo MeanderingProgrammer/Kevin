@@ -1,5 +1,5 @@
 @import '@fontsource/dm-sans';
-@import "@fontsource/dm-sans/700.css";
+@import '@fontsource/dm-sans/700.css';
 
 :root {
     --color-text: #484848;
@@ -10,6 +10,7 @@
 
 body {
     font-family: 'DM Sans';
+    margin: 0;
 }
 
 h1 {

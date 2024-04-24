@@ -4,7 +4,9 @@
 </script>
 
 <header>
-    <img src={logo} alt="Intellection logo" class="logo" />
+    <a href="/">
+        <img src={logo} alt="Intellection logo" class="logo" />
+    </a>
 
     <nav>
         <ul>
