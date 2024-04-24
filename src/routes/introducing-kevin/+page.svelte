@@ -1,5 +1,6 @@
 <script>
     import intro from '$lib/assets/intro-post.png';
+    import graph from '$lib/assets/bar-graph.png';
 </script>
 
 <img src={intro} alt="Introducing Kevin" />
@@ -87,6 +88,8 @@
     Kevin randomly triages 13.69%* of the issues end-to-end, far exceeding the previous state-of-the-art of 1.96%. Even
     when given the exact resolver group, the best previous models can only triage 4.80% of issues.
 </p>
+
+<img src={graph} alt="Bar Graph" />
 
 <p>
     *Kevin was evaluated on a random 25% subset of the dataset. Kevin was unassisted, whereas all other models were
