@@ -1,0 +1,13 @@
+@import '@fontsource/dm-sans';
+
+:root {
+    --color-theme-1: #3863be;
+}
+
+body {
+    font-family: 'DM Sans';
+}
+
+a {
+    color: var(--color-theme-1);
+}

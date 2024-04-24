@@ -4,7 +4,7 @@ const config = {
     tabWidth: 4,
     singleQuote: true,
     trailingComma: 'all',
-    printWidth: 100,
+    printWidth: 120,
     plugins: ['prettier-plugin-svelte'],
     overrides: [
         {
