@@ -132,5 +132,5 @@
 <p>
     Building Kevin is just the first step—our hardest challenges still lie ahead. If you’re excited to solve some of the
     world’s biggest problems and build AI that can reason, learn more about our team and
-    <a href="TODO">apply to join us here</a>.
+    <a href="/jobs">apply to join us here</a>.
 </p>

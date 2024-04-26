@@ -3,9 +3,11 @@
     import Banner from './Banner.svelte';
     import Header from './Header.svelte';
     import { page } from '$app/stores';
+
+    const customPages: string[] = ['/preview', '/jobs'];
 </script>
 
-{#if $page.url.pathname === '/preview'}
+{#if customPages.includes($page.url.pathname)}
     <slot />
 {:else}
     <Banner />
