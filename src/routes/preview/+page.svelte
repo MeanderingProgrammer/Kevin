@@ -1,6 +1,7 @@
 <script lang="ts">
     import Popup from './Popup.svelte';
     import Icon from '@iconify/svelte';
+    import logo from '$lib/assets/logo.png';
 
     let popup: Popup;
 
@@ -21,11 +22,14 @@
 <div class="wrapper">
     <div class="side-bar">
         <div class="section-header">
-            <h1>Kevin</h1>
+            <div class="flex">
+                <a href="/"><img src={logo} alt="Intellection logo" class="logo" /></a>
+                <h1>Kevin</h1>
+            </div>
         </div>
         <div class="empty"></div>
         <div class="section-footer">
-            <button class="request" on:click={popup.show}>
+            <button class="flex" on:click={popup.show}>
                 <Icon icon="radix-icons:enter" width="1.5rem" height="1.5rem" style="color: #6096ff;" />
                 <p>Request access</p>
             </button>
@@ -65,6 +69,16 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .flex {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .prompt-panel {
@@ -117,11 +131,6 @@
         color: #9ca3af;
     }
 
-    .request {
-        display: flex;
-        gap: 1rem;
-    }
-
     .inner {
         padding: 2rem;
     }
@@ -138,7 +147,9 @@
 
     h1 {
         color: #ffffff;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
+        margin-top: 2px;
+        margin-bottom: 1.25rem;
     }
 
     p {
