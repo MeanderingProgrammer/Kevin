@@ -18,12 +18,12 @@ export const ALL_JOBS: Job[] = [
     {
         id: '0003',
         department: 'Project',
-        title: 'Kevin\'s dad',
+        title: "Kevin's dad",
     },
     {
         id: '0004',
         department: 'Project',
-        title: 'Kevin\'s mom',
+        title: "Kevin's mom",
     },
     {
         id: '0005',
