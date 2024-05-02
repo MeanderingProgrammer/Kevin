@@ -134,3 +134,10 @@
     world’s biggest problems and build AI that can reason, learn more about our team and
     <a href="/jobs">apply to join us here</a>.
 </p>
+
+<style>
+    h2 {
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+</style>
