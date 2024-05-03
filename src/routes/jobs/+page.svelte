@@ -1,7 +1,8 @@
 <script lang="ts">
     import type { Job } from '$lib/jobs';
-    import JobListing from './JobListing.svelte';
+
     import type { PageData } from './$types';
+    import JobListing from './JobListing.svelte';
 
     export let data: PageData;
 

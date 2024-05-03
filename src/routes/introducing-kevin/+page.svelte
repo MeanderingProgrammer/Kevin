@@ -1,6 +1,6 @@
 <script lang="ts">
-    import intro from '$lib/assets/intro-post.png';
     import graph from '$lib/assets/bar-graph.png';
+    import intro from '$lib/assets/intro-post.png';
 </script>
 
 <img src={intro} alt="Introducing Kevin" />

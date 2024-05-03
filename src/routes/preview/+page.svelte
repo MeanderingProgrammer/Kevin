@@ -1,7 +1,9 @@
 <script lang="ts">
-    import Popup from './Popup.svelte';
     import Icon from '@iconify/svelte';
+
     import logo from '$lib/assets/logo.png';
+
+    import Popup from './Popup.svelte';
 
     let popup: Popup;
 

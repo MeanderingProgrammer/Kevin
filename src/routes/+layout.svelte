@@ -1,10 +1,12 @@
 <script lang="ts">
     import './styles.css';
+
+    import { page } from '$app/stores';
+
     import Banner from './Banner.svelte';
     import Header from './Header.svelte';
-    import JobHeader from './JobHeader.svelte';
     import JobFooter from './JobFooter.svelte';
-    import { page } from '$app/stores';
+    import JobHeader from './JobHeader.svelte';
 </script>
 
 {#if $page.url.pathname === '/preview'}
